@@ -13,14 +13,13 @@
         #bridge {
             display: block;
             margin: 0 auto;
-            background-image: url('https://sapiens365-my.sharepoint.com/:i:/g/personal/bineesh_p_balan_sapiens_com/ESuZgQ433F1BoHhIaSbh_z8BhUg2GM8L5XdkoqkJSwJjPQ?e=8dApur');
-            background-image: -webkit-image-set(url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943.jpg') 1x, url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943-2x.jpg') 2x);
+            background-image: url('https://i.ibb.co/YXynnty/clue-5.jpg');
+            background-image: -webkit-image-set(url('https://i.ibb.co/YXynnty/clue-5.jpg') 2x);
             background-size: cover;
             width: 100%;
             max-width: 800px;
             height: 900px;
-            cursor: crosshair;
-            cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
+            cursor: default;
         }
 
         #bridgeContainer {
@@ -39,7 +38,7 @@
         <figcaption>Downtown Calgary in 2013 and 1943; mouse down or touch on photo to reveal</figcaption>
     </figure>
     <script>
-        CLEARDOT_DELAY_MILLISECONDS = 15000;
+        CLEARDOT_DELAY_MILLISECONDS = 3500;
 
     var bridge = document.getElementById("bridge"),
     bridgeCanvas = bridge.getContext('2d'),
@@ -53,7 +52,7 @@
     img.onload = function() {
     bridgeCanvas.drawImage(img, 0, 0, bridge.width, bridge.height);
     }
-    img.loc = 'https://i.ibb.co/dgVH4XB/';
+    img.loc = 'https://i.ibb.co/tJT7xqm/';
     img.filename = 'clue-4.jpg';
     if (window.devicePixelRatio >= 2) {
     var nameParts = img.filename.split('.');
